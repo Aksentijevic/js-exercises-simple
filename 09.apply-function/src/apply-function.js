@@ -6,7 +6,11 @@ var MyFunction = function() {
   'use strict';
 
   function applyFunction(list, f) {
-
+    let result = [];
+    for(let i = 0 ; i < list.length; i++){
+      result[i] = f(list[i]);
+    }
+    return result;
   }
 
   return {
