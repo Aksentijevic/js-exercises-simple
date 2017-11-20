@@ -6,9 +6,11 @@ var List = function() {
 
   function has(list, element) {
     var flag = false;
+
     for(var i=0; i < list.length; i++){
-      if(list[i] === element){flag=true;}
+      if(list[i] === element){ flag=true; }
     }
+
     return flag;
   }
 

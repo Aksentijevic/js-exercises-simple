@@ -6,24 +6,23 @@ var Sum = function() {
 
   function sumNumbers(n) {
 
-    var summed = 0;
+    var result = 0;
 
     if ( n < 0 ){
 
       for(var i = -1; i >= n; i--){
-          summed += i;
+        result += i;
       }
 
     } else if ( n > 0 ) {
 
       for(var i = 1; i <= n; i++){
-          summed += i;
+        result += i;
       }
 
     }
 
-    return summed;
-    
+    return result;
   }
 
   return {

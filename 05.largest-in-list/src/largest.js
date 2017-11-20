@@ -8,15 +8,18 @@ var List = function() {
     var largest;
 
     if(list.length > 0){
+
       largest= list[0]
       for(var i=1; i < list.length; i++){
+
         if(list[i] >= largest ){
           largest = list[i];
         }
+
       }
-    } else {
-      throw 'List cannot be empty.';
-    }
+
+    } else { throw 'List cannot be empty.';}
+
     return largest
   }
 

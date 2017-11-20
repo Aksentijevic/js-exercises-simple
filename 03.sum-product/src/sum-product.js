@@ -16,13 +16,13 @@ var SumProduct = function() {
       }
 
     } else if (opts.mode == 'product'){
+
         result = 1;
         for(var i = n; i >= 1; i--){
             result *= i;
         }
-    } else if (opts.mode == 'math is hard') {
-        throw 'Invalid calculation mode.';
-    }
+
+    } else if (opts.mode == 'math is hard') { throw 'Invalid calculation mode.'; }
 
     return result;
   }

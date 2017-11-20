@@ -13,9 +13,11 @@ var MultiplicationTable = function() {
       table[i] = [];
         table[i][0] = i;
     }
+
     for(var i=1; i<=n; i++) {
         table[0][i] = i;
     }
+
     for(var i=1; i<=n; i++) {
         for(var j=1; j<=n; j++) {
           table[i][j] = i*j;
