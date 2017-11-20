@@ -7,17 +7,17 @@ var SumProduct = function() {
   'use strict';
 
   function calculate(n, opts) {
-    let result = 0;
+    var result = 0;
 
     if (opts.mode == 'sum'){
 
-      for(let i = 1; i <= n; i++){
+      for(var i = 1; i <= n; i++){
         result += i;
       }
 
     } else if (opts.mode == 'product'){
         result = 1;
-        for(let i = n; i >= 1; i--){
+        for(var i = n; i >= 1; i--){
             result *= i;
         }
     } else if (opts.mode == 'math is hard') {

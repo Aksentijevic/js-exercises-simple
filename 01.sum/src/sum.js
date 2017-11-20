@@ -6,17 +6,17 @@ var Sum = function() {
 
   function sumNumbers(n) {
 
-    let summed = 0;
+    var summed = 0;
 
     if ( n < 0 ){
 
-      for(let i = -1; i >= n; i--){
+      for(var i = -1; i >= n; i--){
           summed += i;
       }
 
     } else if ( n > 0 ) {
 
-      for(let i = 1; i <= n; i++){
+      for(var i = 1; i <= n; i++){
           summed += i;
       }
 

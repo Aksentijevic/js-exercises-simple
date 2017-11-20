@@ -5,11 +5,11 @@ var List = function() {
   'use strict';
 
   function findLargest(list) {
-    let largest;
+    var largest;
 
     if(list.length > 0){
       largest= list[0]
-      for(let i=1; i < list.length; i++){
+      for(var i=1; i < list.length; i++){
         if(list[i] >= largest ){
           largest = list[i];
         }

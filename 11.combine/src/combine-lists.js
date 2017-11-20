@@ -5,9 +5,9 @@ var List = function() {
   'use strict';
 
   function combine(list1, list2) {
-    let result = [];
-    let size = (list1.length + list2.length);
-    for(let i = 0; i < size; i++){
+    var result = [];
+    var size = (list1.length + list2.length);
+    for(var i = 0; i < size; i++){
       if(list1.length > 0){result.push(list1.shift());}
       if(list2.length > 0){result.push(list2.shift());}
     }
