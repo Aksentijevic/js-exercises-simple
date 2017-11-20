@@ -10,6 +10,20 @@ var Sum = function() {
 
   function sumNumbers35(n) {
 
+    if( n < 0 ){
+      throw 'No negative numbers allowed';
+    }
+
+    let summed = 0;
+
+    for (let i = 1; i <= n; i++){
+      if ( (i % 3 == 0) || (i % 5 == 0) ){
+          summed += i;
+      }
+    } 
+
+    return summed;
+
   }
 
   return {
